@@ -28,3 +28,8 @@ vars:
     description: A short project description
     default: A World built with The Seed.
     prompt: Describe this World
+  project_folder:
+    type: string
+    description: The main folder that will contain your new Flutter project
+    default: projects
+    prompt: Name of the folder to generate the world into
