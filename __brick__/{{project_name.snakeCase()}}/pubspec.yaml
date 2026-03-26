@@ -24,20 +24,20 @@ dependencies:
   google_fonts: ^6.3.2
   hive_ce: ^2.19.3
   hive_ce_flutter: ^2.3.4
+  intl: ^0.20.2
   json_annotation: ^4.11.0
   json_serializable: ^6.13.0
   logger: ^2.6.2
   pinput: ^6.0.2
   pretty_dio_logger: ^1.4.0
   shimmer: ^3.0.0
-  intl: ^0.20.2
   toastification: ^3.0.3
 
 dev_dependencies:
   bloc_lint: ^0.4.0
   bloc_test: ^10.0.0
-  build_runner: ^2.12.2
   bloc_tools: ^0.1.0-dev.23
+  build_runner: ^2.12.2
   flutter_test:
     sdk: flutter
   freezed: ^3.2.5
