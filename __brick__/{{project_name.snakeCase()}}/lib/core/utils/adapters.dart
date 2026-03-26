@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/material.dart';
 import 'package:hive_ce/hive.dart';
 import 'package:{{project_name.snakeCase()}}/core/core.dart';
 

@@ -20,7 +20,7 @@ class NetworkUtil {
   Dio _getHttpClient() {
     final dio = Dio(
       BaseOptions(
-        baseUrl: TiifuConfig.instance!.values.baseUrl,
+        baseUrl: {{project_name.pascalCase()}}Config.instance!.values.baseUrl,
         contentType: 'application/json',
         headers: {'Accept': 'application/json'},
         connectTimeout: const Duration(seconds: 60),

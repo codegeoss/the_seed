@@ -27,7 +27,7 @@ class {{project_name.pascalCase()}}Values {
 }
 
 class {{project_name.pascalCase()}}Config {
-  factory TiifuConfig({required {{project_name.pascalCase()}}Values values}) {
+  factory {{project_name.pascalCase()}}Config({required {{project_name.pascalCase()}}Values values}) {
     return _instance ??= {{project_name.pascalCase()}}Config._internal(values);
   }
 

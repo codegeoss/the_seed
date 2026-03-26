@@ -22,24 +22,24 @@ class HiveServiceImplementation implements HiveService {
 
     const secureStorage = FlutterSecureStorage();
     final encryptionKeyString = await secureStorage.read(
-      key: TiifuConfig.instance!.values.hiveBoxEncryptionKey,
+      key: {{project_name.pascalCase()}}Config.instance!.values.hiveBoxEncryptionKey,
     );
     if (encryptionKeyString == null) {
       final key = Hive.generateSecureKey();
       await secureStorage.write(
-        key: TiifuConfig.instance!.values.hiveBoxEncryptionKey,
+        key: {{project_name.pascalCase()}}Config.instance!.values.hiveBoxEncryptionKey,
         value: base64UrlEncode(key),
       );
     }
     final key = await secureStorage.read(
-      key: TiifuConfig.instance!.values.hiveBoxEncryptionKey,
+      key: {{project_name.pascalCase()}}Config.instance!.values.hiveBoxEncryptionKey,
     );
     final encryptionKeyUint8List = base64Url.decode(key!);
 
     Hive.registerAdapter(ThemeAdapter());
 
     await Hive.openBox<dynamic>(
-      TiifuConfig.instance!.values.hiveBoxKey,
+      {{project_name.pascalCase()}}Config.instance!.values.hiveBoxKey,
       encryptionCipher: HiveAesCipher(encryptionKeyUint8List),
     );
   }
@@ -47,20 +47,20 @@ class HiveServiceImplementation implements HiveService {
   @override
   void clearBox() {
     Hive.box<dynamic>(
-      TiifuConfig.instance!.values.hiveBoxKey,
+      {{project_name.pascalCase()}}Config.instance!.values.hiveBoxKey,
     ).deleteAll(['accessToken']);
   }
 
   @override
   void persistToken(String token) {
     Hive.box<dynamic>(
-      TiifuConfig.instance!.values.hiveBoxKey,
+      {{project_name.pascalCase()}}Config.instance!.values.hiveBoxKey,
     ).put('accessToken', token);
   }
 
   @override
   String? retrieveToken() {
-    final box = Hive.box<dynamic>(TiifuConfig.instance!.values.hiveBoxKey);
+    final box = Hive.box<dynamic>({{project_name.pascalCase()}}Config.instance!.values.hiveBoxKey);
     final accessToken = box.get('accessToken') as String?;
     if (accessToken == null) return null;
     return accessToken;
@@ -69,14 +69,14 @@ class HiveServiceImplementation implements HiveService {
   @override
   void deleteToken() {
     Hive.box<dynamic>(
-      TiifuConfig.instance!.values.hiveBoxKey,
+      {{project_name.pascalCase()}}Config.instance!.values.hiveBoxKey,
     ).delete('accessToken');
   }
 
   @override
   void persistThemeMode(ThemeMode themeMode) {
     Hive.box<dynamic>(
-      TiifuConfig.instance!.values.hiveBoxKey,
+      {{project_name.pascalCase()}}Config.instance!.values.hiveBoxKey,
     ).put('themeMode', themeMode.toString());
   }
 
@@ -84,7 +84,7 @@ class HiveServiceImplementation implements HiveService {
   ThemeMode retrieveThemeMode() {
     final themeMode =
         Hive.box<dynamic>(
-              TiifuConfig.instance!.values.hiveBoxKey,
+              {{project_name.pascalCase()}}Config.instance!.values.hiveBoxKey,
             ).get('themeMode')
             as String?;
 
