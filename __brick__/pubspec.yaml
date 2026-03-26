@@ -9,19 +9,34 @@ environment:
 
 dependencies:
   bloc: ^9.2.0
+  build_version: ^2.1.3
+  dio: ^5.9.2
+  extended_image: ^10.0.1
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
   flutter_localizations:
     sdk: flutter
+  flutter_secure_storage: ^10.0.0
+  freezed_annotation: ^3.1.0
+  get_it: ^9.2.1
+  hive_ce: ^2.19.3
+  hive_ce_flutter: ^2.3.4
+  json_annotation: ^4.11.0
+  json_serializable: ^6.13.0
+  logger: ^2.6.2
+  pretty_dio_logger: ^1.4.0
   intl: ^0.20.2
 
 dev_dependencies:
   bloc_lint: ^0.4.0
   bloc_test: ^10.0.0
+  build_runner: ^2.12.2
   bloc_tools: ^0.1.0-dev.23
   flutter_test:
     sdk: flutter
+  freezed: ^3.2.5
+  hive_ce_generator: ^1.11.1
   mocktail: ^1.0.4
   very_good_analysis: ^10.2.0
 
