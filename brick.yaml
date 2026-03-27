@@ -1,7 +1,7 @@
 name: the_seed
 description: A custom universal Flutter starter package for world-building. Based on VGV Core.
 repository: https://github.com/codegeoss/the_seed
-version: 0.1.0+1
+version: 0.1.0+2
 
 environment:
   mason: ">=0.1.0-dev.26 <0.7.0"

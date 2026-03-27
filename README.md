@@ -1,106 +1,189 @@
-# Very Good Core
+# 🧬 The Seed
 
-[![Very Good Ventures][logo_white]][very_good_ventures_link_dark]
+[![Powered by
+Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)<br>[![License:
+MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Developed with 💙 by [Very Good Ventures][very_good_ventures_link] 🦄
+> *"There is no world that cannot be reached."*\
+> --- Inspired by **Sword Art Online**
 
-[![License: MIT][license_badge]][license_link]
-[![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
+**The Seed** is a **production-ready Flutter starter template** designed
+to help you build scalable, maintainable, and high-performance apps ---
+fast.
 
-A Very Good Flutter app created by Very Good Ventures 🦄.
+Built on top of the battle-tested **Very Good Core** by Very Good
+Ventures, this template adds a powerful, opinionated architecture so you
+can focus on building features instead of reinventing foundations.
 
-## What's Included ✨
+------------------------------------------------------------------------
 
-Out of the box, Very Good Core includes:
+# 🚀 Why The Seed?
 
-- ✅ [Cross Platform Support][flutter_cross_platform_link] - Built-in support for iOS, Android, Web, and Windows (MacOS/Linux coming soon!)
-- ✅ [Build Flavors][flutter_flavors_link] - Multiple flavor support for development, staging, and production
-- ✅ [Internationalization Support][internationalization_link] - Internationalization support using code generation to streamline the development process
-- ✅ [Sound Null-Safety][null_safety_link] - No more null-dereference exceptions at runtime. Develop with a sound, static type system.
-- ✅ [Bloc][bloc_link] - Integrated bloc architecture for scalable, testable code which offers a clear separation between business logic and presentation
-- ✅ [Testing][testing_link] - Unit and Widget Tests with 100% line coverage (Integration Tests coming soon!)
-- ✅ [Logging][logging_link] - Built-in, extensible logging to capture uncaught Flutter and Dart Exceptions
-- ✅ [Very Good Analysis][very_good_analysis_link] - Strict Lint Rules which are used at [Very Good Ventures][very_good_ventures_link]
-- ✅ [Continuous Integration][github_actions_link] - Lint, format, test, and enforce code coverage using [GitHub Actions][github_actions_link]
-- ✅ Dependabot Integration
+Most starter templates give you structure.
 
-_\* Learn more at [Flutter Starter App: Very Good Core & CLI][very_good_cli_blog_link]_
+**The Seed gives you a system.**
 
-## Output 📦
+It comes pre-wired with: 
+- Architecture decisions ✅ 
+- Networking layer ✅
+- Dependency injection ✅ 
+- Theming system ✅ 
+- App configuration ✅
 
-```sh
-├── .github
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   ├── dependabot.yaml
-│   └── workflows
-│       └── main.yaml
-├── .gitignore
-├── .idea
-│   └── runConfigurations
-│       ├── development.xml
-│       ├── production.xml
-│       └── staging.xml
-├── .vscode
-│   ├── extensions.json
-│   └── launch.json
-├── LICENSE
-├── README.md
-├── analysis_options.yaml
-├── android
-├── coverage_badge.svg
-├── ios
-├── l10n.yaml
-├── lib
-│   ├── app
-│   │   ├── app.dart
-│   │   └── view
-│   ├── bootstrap.dart
-│   ├── counter
-│   │   ├── counter.dart
-│   │   ├── cubit
-│   │   └── view
-│   ├── l10n
-│   │   ├── arb
-│   │   └── l10n.dart
-│   ├── main_development.dart
-│   ├── main_production.dart
-│   └── main_staging.dart
-├── pubspec.lock
-├── pubspec.yaml
-├── test
-│   ├── app
-│   │   └── view
-│   ├── counter
-│   │   ├── cubit
-│   │   └── view
-│   └── helpers
-│       ├── helpers.dart
-│       └── pump_app.dart
-├── web
-└── windows   
+So you can go from:
+
+``` bash
+mason make the_seed
 ```
 
+➡️ to building real features in minutes.
 
-By default `mason make` will generate the output in the current working directory but a custom output directory can be specified via the [-o option][mason_output_dir]:
+------------------------------------------------------------------------
 
-```sh
-mason make very_good_core -o ./output_folder
+# ✨ What's Included
+
+## 🌱 The Seed Enhancements
+
+### 🌐 Network Layer
+
+-   Preconfigured HTTP client (Dio-ready structure)
+-   Centralized API handling
+-   Scalable service abstraction
+-   Interceptors-ready architecture
+
+### 💉 Dependency Injection
+
+-   Clean DI setup (GetIt-ready structure)
+-   Centralized service registration
+-   Easily extendable for large apps
+
+### 🧱 Core Architecture
+
+``` sh
+core/
+├── constants     # 🔑 App constants
+├── services      # ⚙️ Services layer
+├── theme         # 🎨 Theming
+├── router        # 🧭 Navigation
+├── helpers       # 🧰 Utilities
+├── components    # 🧩 UI components
+├── utils         # ⚡ Shared utilities
 ```
 
-[mason_output_dir]: https://docs.brickhub.dev/mason-make#-custom-output-directory
-[bloc_link]: https://bloclibrary.dev
-[flutter_cross_platform_link]: https://flutter.dev/docs/development/tools/sdk/release-notes/supported-platforms
-[flutter_flavors_link]: https://flutter.dev/docs/deployment/flavors
-[github_actions_link]: https://github.com/features/actions
-[internationalization_link]: https://flutter.dev/docs/development/accessibility-and-localization/internationalization
-[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[license_link]: https://opensource.org/licenses/MIT
-[logo_white]: https://raw.githubusercontent.com/VGVentures/very_good_brand/main/styles/README/vgv_logo_white.png#gh-dark-mode-only
-[logging_link]: https://api.flutter.dev/flutter/dart-developer/log.html
-[null_safety_link]: https://flutter.dev/docs/null-safety
-[testing_link]: https://flutter.dev/docs/testing
-[very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
-[very_good_cli_blog_link]: https://verygood.ventures/blog/flutter-starter-app-very-good-core-cli
-[very_good_ventures_link_dark]: https://verygood.ventures#gh-dark-mode-only
-[very_good_ventures_link]: https://verygood.ventures
-[very_good_workflows_link]: https://github.com/VeryGoodOpenSource/very_good_workflows
+### 🎨 Design System
+
+-   Centralised AppColors
+-   Theme configuration
+-   Light/Dark mode ready
+-   Consistent UI scaling
+
+### ⚙️ App Configuration
+
+-   Environment-ready structure
+-   Works with VGV flavors
+-   Centralized config
+
+### 📦 Feature-Based Scaling
+
+``` sh
+features/
+ └── counter/
+      ├── cubit/
+      ├── view/
+```
+
+-   Modular structure
+-   Scalable architecture
+-   Clean separation
+
+### 🧠 Developer Experience
+
+-   Reduced boilerplate
+-   Clean architecture
+-   Plug-and-play setup
+-   Easy onboarding
+
+### 🤖 Automation (Hooks)
+
+-   Runs automatically:
+    -   flutter pub get
+    -   dart fix --apply
+    -   dart format
+
+------------------------------------------------------------------------
+
+## 🦄 Very Good Foundations
+
+-   ✅ Cross Platform
+-   ✅ Build Flavors
+-   ✅ Bloc Architecture
+-   ✅ Testing setup
+-   ✅ Strict linting
+-   ✅ CI with GitHub Actions
+-   ✅ Internationalization
+
+------------------------------------------------------------------------
+
+# 📦 Project Structure
+
+``` sh
+lib/
+├── app/
+├── core/
+├── features/
+├── l10n/
+├── bootstrap.dart
+└── main_*.dart
+```
+
+------------------------------------------------------------------------
+
+# ⚡ Getting Started
+
+## 1. Install Mason
+
+``` bash
+dart pub global activate mason_cli
+```
+
+## 2. Add the brick
+
+``` bash
+mason add the_seed --git-url https://github.com/codegeoss/the_seed.git
+```
+
+## 3. Generate your app
+
+``` bash
+mason make the_seed
+```
+
+Follow prompts and run:
+
+``` bash
+cd your_app
+flutter run
+```
+
+------------------------------------------------------------------------
+
+# 🧠 Philosophy
+
+**The Seed is not just a template --- it's a foundation.**
+
+It enforces: - Consistency - Scalability - Maintainability
+
+So every app you build: - looks clean - scales easily - is
+production-ready
+
+------------------------------------------------------------------------
+
+# 🌍 Vision
+
+> Build worlds, not boilerplate.
+
+------------------------------------------------------------------------
+
+# 🪪 License
+
+MIT License © 2026
