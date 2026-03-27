@@ -66,6 +66,43 @@ Future<void> run(HookContext context) async {
     buildRunnerProgress.fail('Failed to run build_runner: $e');
   }
 
+  /// 3. Fix Analyzer Issues
+  ///
+  /// This runs `dart fix --apply`. It automatically resolves fixable
+  /// lint errors (like unused imports or deprecated members) that
+  /// might have been introduced during the template generation.
+  final fixProgress = context.logger.progress(
+    'Sowing the Seed: Fixing analyzer issues',
+  );
+  try {
+    await Process.run(
+      'dart',
+      ['fix', '--apply'],
+      workingDirectory: projectDirectory.path,
+    );
+    fixProgress.complete('Analyzer issues fixed!');
+  } on Exception catch (e) {
+    fixProgress.fail('Failed to run dart fix: $e');
+  }
+
+  /// 4. Format Code
+  ///
+  /// This runs `dart format lib test`. It specifically targets your
+  /// source and test directories to ensure the code looks professional.
+  final formatProgress = context.logger.progress(
+    'Sowing the Seed: Formatting code',
+  );
+  try {
+    await Process.run(
+      'dart',
+      ['format', 'lib', 'test'],
+      workingDirectory: projectDirectory.path,
+    );
+    formatProgress.complete('Code formatted!');
+  } on Exception catch (e) {
+    formatProgress.fail('Failed to format code: $e');
+  }
+
   /// Final Summary
   ///
   /// Provide the user with clear next steps to start their new world.
