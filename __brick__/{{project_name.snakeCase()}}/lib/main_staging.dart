@@ -17,7 +17,7 @@ Future<void> main() async {
       {{project_name.pascalCase()}}Config(
         values: {{project_name.pascalCase()}}Values(
         urlScheme: 'https',
-        baseDomain: 'api.example.com',
+        baseDomain: 'stage.api.example.com',
         hiveBoxKey: '{{project_name.snakeCase()}}_staging',
         hiveBoxEncryptionKey: '',
         buildFlavour: BuildFlavour.staging,
