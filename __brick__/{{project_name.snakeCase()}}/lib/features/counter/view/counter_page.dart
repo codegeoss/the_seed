@@ -1,3 +1,4 @@
+import 'package:{{project_name.snakeCase()}}/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:{{project_name.snakeCase()}}/features/features.dart';
