@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:{{project_name.snakeCase()}}/core/core.dart';
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
 import 'package:logger/logger.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
-import 'package:{{project_name.snakeCase()}}/core/core.dart';
 
 class NetworkUtil {
   factory NetworkUtil() => _networkUtil;

@@ -1,9 +1,10 @@
 import 'dart:convert';
 
+import 'package:{{project_name.snakeCase()}}/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:hive_ce_flutter/adapters.dart';
-import 'package:{{project_name.snakeCase()}}/core/core.dart';
+
 
 abstract class HiveService {
   Future<void> initBoxes();

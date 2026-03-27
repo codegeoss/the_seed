@@ -1,5 +1,6 @@
-import 'package:flutter/foundation.dart';
 import 'package:{{project_name.snakeCase()}}/core/core.dart';
+import 'package:flutter/foundation.dart';
+
 
 class {{project_name.pascalCase()}}Values {
   {{project_name.pascalCase()}}Values({
