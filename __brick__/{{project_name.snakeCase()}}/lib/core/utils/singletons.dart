@@ -3,6 +3,6 @@ import 'package:{{project_name.snakeCase()}}/features/features.dart';
 
 class Singletons {
   static List<BlocProvider> registerCubits() => [
-    BlocProvider(create: (context) => CounterCubit()),
+    BlocProvider<CounterCubit>(create: (context) => CounterCubit()),
   ];
 }
