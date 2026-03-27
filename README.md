@@ -146,13 +146,20 @@ lib/
 dart pub global activate mason_cli
 ```
 
-## 2. Add the brick
+## 2. Initialize Mason (Required)
+Before adding any bricks, you must initialize Mason in your working directory:
+
+```bash
+mason init
+```
+
+## 3. Add the brick
 
 ``` bash
 mason add the_seed --git-url https://github.com/codegeoss/the_seed.git
 ```
 
-## 3. Generate your app
+## 4. Generate your app
 
 ``` bash
 mason make the_seed
@@ -165,25 +172,4 @@ cd your_app
 flutter run
 ```
 
-------------------------------------------------------------------------
 
-# 🧠 Philosophy
-
-**The Seed is not just a template --- it's a foundation.**
-
-It enforces: - Consistency - Scalability - Maintainability
-
-So every app you build: - looks clean - scales easily - is
-production-ready
-
-------------------------------------------------------------------------
-
-# 🌍 Vision
-
-> Build worlds, not boilerplate.
-
-------------------------------------------------------------------------
-
-# 🪪 License
-
-MIT License © 2026
