@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:{{project_name.snakeCase()}}/core/core.dart';
+import 'package:{{project_name.snakeCase()}}/common/common.dart';
 
 class CustomRadioWidget<T> extends StatelessWidget {
   const CustomRadioWidget({

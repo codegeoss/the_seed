@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
-import 'package:{{project_name.snakeCase()}}/core/core.dart';
+import 'package:{{project_name.snakeCase()}}/common/common.dart';
 
 class ShimmerWidget extends StatelessWidget {
   const ShimmerWidget.rectangular({

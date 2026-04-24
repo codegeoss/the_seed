@@ -1,6 +1,6 @@
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart';
-import 'package:{{project_name.snakeCase()}}/core/core.dart';
+import 'package:{{project_name.snakeCase()}}/common/common.dart';
 
 class InternetImage extends StatelessWidget {
   const InternetImage({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toastification/toastification.dart';
-import 'package:{{project_name.snakeCase()}}/core/core.dart';
+import 'package:{{project_name.snakeCase()}}/common/common.dart';
 
 abstract class NotificationHelper {
   static void showToast(

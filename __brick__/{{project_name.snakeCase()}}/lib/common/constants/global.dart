@@ -1,4 +1,4 @@
-import 'package:{{project_name.snakeCase()}}/core/core.dart';
+import 'package:{{project_name.snakeCase()}}/common/common.dart';
 import 'package:flutter/foundation.dart';
 
 
