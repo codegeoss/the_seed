@@ -26,23 +26,23 @@ dependencies:
   hive_ce_flutter: ^2.3.4
   intl: ^0.20.2
   json_annotation: ^4.11.0
-  json_serializable: ^6.13.0
-  logger: ^2.6.2
+  json_serializable: ^6.13.1
+  logger: ^2.7.0
   pinput: ^6.0.2
   pretty_dio_logger: ^1.4.0
   shimmer: ^3.0.0
-  toastification: ^3.0.3
+  toastification: ^3.2.0
 
 dev_dependencies:
-  bloc_lint: ^0.4.0
+  bloc_lint: ^0.4.1
   bloc_test: ^10.0.0
   bloc_tools: ^0.1.0-dev.23
-  build_runner: ^2.12.2
+  build_runner: ^2.13.1
   flutter_test:
     sdk: flutter
   freezed: ^3.2.5
   hive_ce_generator: ^1.11.1
-  mocktail: ^1.0.4
+  mocktail: ^1.0.5
   very_good_analysis: ^10.2.0
 
 flutter:
