@@ -57,17 +57,24 @@ mason make the_seed
 -   Centralized service registration
 -   Easily extendable for large apps
 
-### 🧱 Core Architecture
+### 🤲 Common Architecture
 
 ``` sh
 core/
 ├── constants     # 🔑 App constants
-├── services      # ⚙️ Services layer
-├── theme         # 🎨 Theming
-├── router        # 🧭 Navigation
+├── repositories  # 🌐 API calls
 ├── helpers       # 🧰 Utilities
 ├── components    # 🧩 UI components
 ├── utils         # ⚡ Shared utilities
+```
+
+### 🧱 Core Architecture
+
+``` sh
+core/
+├── services      # ⚙️ Services layer
+├── theme         # 🎨 Theming
+├── router        # 🧭 Navigation
 ```
 
 ### 🎨 Design System
@@ -129,6 +136,7 @@ features/
 ``` sh
 lib/
 ├── app/
+├── common/
 ├── core/
 ├── features/
 ├── l10n/
