@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:{{project_name.snakeCase()}}/common/common.dart';
 import 'package:{{project_name.snakeCase()}}/core/core.dart';
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';

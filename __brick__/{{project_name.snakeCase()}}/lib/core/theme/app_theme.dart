@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:{{project_name.snakeCase()}}/common/common.dart';
 import 'package:{{project_name.snakeCase()}}/core/core.dart';
 
 class AppTheme {
