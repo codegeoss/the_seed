@@ -6,6 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:{{project_name.snakeCase()}}/bootstrap.dart';
+import 'package:{{project_name.snakeCase()}}/common/common.dart';
 import 'package:{{project_name.snakeCase()}}/core/core.dart';
 import 'package:google_fonts/google_fonts.dart';
 
