@@ -57,17 +57,24 @@ mason make the_seed
 -   Centralized service registration
 -   Easily extendable for large apps
 
-### 🧱 Core Architecture
+### 🤲 Common Architecture
 
 ``` sh
 core/
 ├── constants     # 🔑 App constants
-├── services      # ⚙️ Services layer
-├── theme         # 🎨 Theming
-├── router        # 🧭 Navigation
+├── repositories  # 🌐 API calls
 ├── helpers       # 🧰 Utilities
 ├── components    # 🧩 UI components
 ├── utils         # ⚡ Shared utilities
+```
+
+### 🧱 Core Architecture
+
+``` sh
+core/
+├── services      # ⚙️ Services layer
+├── theme         # 🎨 Theming
+├── router        # 🧭 Navigation
 ```
 
 ### 🎨 Design System
@@ -129,6 +136,7 @@ features/
 ``` sh
 lib/
 ├── app/
+├── common/
 ├── core/
 ├── features/
 ├── l10n/
@@ -163,6 +171,14 @@ mason add the_seed --git-url https://github.com/codegeoss/the_seed.git
 
 ``` bash
 mason make the_seed
+```
+
+## 4. Update new version
+If you ever want to update to your latest version of "The Seed" 
+after new changes have been pushed to GitHub, you just need to run:
+
+``` bash
+mason update -g the_seed
 ```
 
 Follow prompts and run:
