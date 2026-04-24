@@ -173,6 +173,14 @@ mason add the_seed --git-url https://github.com/codegeoss/the_seed.git
 mason make the_seed
 ```
 
+## 4. Update new version
+If you ever want to update to your latest version of "The Seed" 
+after new changes have been pushed to GitHub, you just need to run:
+
+``` bash
+mason update -g the_seed
+```
+
 Follow prompts and run:
 
 ``` bash
